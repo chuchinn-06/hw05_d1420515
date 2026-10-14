@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!-- 宣告使用 HTML5；DOCTYPE 是文件類型宣告，不需要結束標籤。 -->
+<html lang="zh-Hant">
+<!-- html 包住整份文件；lang="zh-Hant" 表示主要使用繁體中文。 -->
+<head>
+    <!-- head 放網頁資訊；這些資訊不會直接成為頁面中的報導文字。 -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 可正確處理中文；meta 是空元素，不寫結束標籤。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport 讓行動裝置使用裝置寬度；不代表固定寬度的圖片會自動縮小。 -->
+    <meta name="description" content="走進勤美綠園道與草悟道商圈，認識融合綠意、藝文與商場的城市美學，透過清單、表格、照片閱讀台中生活記憶。">
+    <!-- description 提供網頁摘要；author 標示作者。 -->
+    <meta name="author" content="HTML 課程示範作者">
+    <title>勤美綠園道報導｜城市中的綠意美學與藝文風景</title>
+    <!-- title 顯示在瀏覽器分頁；與 body 中的 h1 用途不同。 -->
+</head>
+
+<body>
+    <!--
+        第四次作業：一頁式勤美綠園道報導。
+        本範例僅使用 HTML，保留瀏覽器預設呈現，不加入 CSS 或 JavaScript。
+        註解使用「小於符號、驚嘆號、兩個連字號」開始，並以兩個連字號及大於符號結束。
+        註解不會顯示於網頁，但讀者可從原始碼看見，因此不要放私人資料。
+        使用一致的四個空格縮排；成對標籤都明確寫出結束標籤。
+    -->
+
+    <!-- header 是頁首；id="top" 是下方「回到頁首」連結的目的地。 -->
+    <header id="top">
+        <!-- h1 是本頁主標題；h2 用於各章節，依內容階層選用標題。 -->
+        <h1>勤美綠園道：城市中的綠意美學與藝文風景</h1>
+        <p>從草悟道漫步到室內植生牆，一起感受台中的慢活與創意的結合。</p>
+        <!-- time 的 datetime 以標準日期格式提供機器可讀的日期。 -->
+        <p>作者：HTML 課程示範作者｜報導整理日期：<time datetime="2026-10-07">2026 年 10 月 7 日</time></p>
+        <p><small>本文為資料整理型教學報導，非現場採訪紀錄。</small></p>
+    </header>
+
+    <!-- nav 表示導覽區；href="#名稱" 會跳到本頁相同 id 的元素。 -->
+    <nav aria-label="報導目錄">
+        <h2>報導目錄</h2>
+        <ul>
+            <li><a href="#intro">商圈與綠園道簡介</a></li>
+            <li><a href="#highlights">景點特色與逛街順序</a></li>
+            <li><a href="#table">景點比較表</a></li>
+            <li><a href="#photo">室內植生牆照片</a></li>
+            <li><a href="#video">影音報導</a></li>
+            <li><a href="#sources">資料來源</a></li>
+        </ul>
+    </nav>
+
+    <!-- hr 表示內容主題的分隔，也是沒有結束標籤的空元素。 -->
+    <hr>
+
+    <!-- main 包住本頁主要內容；article 表示可獨立閱讀的完整報導。 -->
+    <main>
+        <article aria-label="勤美綠園道專題報導">
+            <!-- section 將報導分成有標題的章節；同一頁中的 id 不可重複。 -->
+            <section id="intro">
+                <h2>一、商圈與綠園道簡介</h2>
+                <!-- p 表示段落；strong 強調重要資訊，不用來取代標題。 -->
+                <p>
+                    勤美綠園道與草悟道商圈位於台中市西區，是結合市民廣場、綠意植栽與大型購物商場的指標性街區。
+                    其中核心地標<strong>勤美誠品綠園道</strong>自 <strong>2008 年</strong>開幕以來，
+                    成功將自然生態與商業空間融合，成為市民與旅客感受城市慢活節奏的重要據點。
+                </p>
+                <p>
+                    建築設計上最具代表性的是由室內外打造的大型<strong>植生牆</strong>，
+                    讓整棟商場彷彿是一座會呼吸的垂直森林，與周邊綠帶相互輝映。
+                </p>
+                <p>
+                    從綠意盎然的草悟道步道到充滿設計感的商場空間，勤美綠園道串聯起了台中的藝文與生活日常。
+                    本篇以景點整理與建議散步順序，帶領讀者認識這處充滿活力的街區。
+                </p>
+                </p>
+                <!-- br 僅用於同段文字中需要的換行；不要用很多 br 製造間距。 -->
+                <p>商場地址：台中市西區公益路 68 號。<br>閱讀重點：室內植生牆、草悟道綠帶與周邊藝文空間。</p>
+            </section>
+
+            <section id="highlights">
+                <h2>二、景點特色與逛街順序</h2>
+                <h3>值得留意的三個特色</h3>
+                <!-- ul 是無序清單；li 是個別項目，適合不分先後的資訊。 -->
+                <ul>
+                    <li><strong>垂直森林：</strong>結合室內外的大規模植生牆，展現對自然的尊重與綠色美學。</li>
+                    <li><strong>草悟道綠帶：</strong>串聯科博館與美術館的開放式綠地空間，充滿悠閒氛圍。</li>
+                    <li><strong>藝文與商場交織：</strong>商場內部與周邊常態性舉辦藝術展演與文創市集。</li>
+                </ul>
+
+                <h3>建議散步順序</h3>
+                <p>以下是本報導規劃的散步建議，並非官方指定路線。</p>
+                <!-- ol 是有序清單；瀏覽器會依 li 的排列產生編號。 -->
+                <ol>
+                   <li>抵達市民廣場或草悟道外圍，先感受街區的開放綠地與市集氛圍。</li>
+                    <li>走入勤美誠品綠園道內部，欣賞挑空設計與巨大的室內植生牆景觀並開始逛街購物。</li>
+                    <li>前往周邊的文創聚落或獨立小店，探索台中的在地設計選物。</li>
+                    <li>選擇商場內或戶外咖啡座休憩，結束豐富充實的逛街行程。</li>
+                </ol>
+            </section>
+
+            <section id="table">
+                <h2>三、景點比較表</h2>
+                <!--
+                    table 用於呈現資料，不用來排版整個網頁。
+                    本作業維持純 HTML，表格沒有額外的框線樣式。
+                    不使用已過時的 border、cellpadding、cellspacing 屬性。
+                -->
+                <table border="1">
+                    <!-- caption 是表格標題，放在 table 內最前面。 -->
+                    <caption>勤美綠園道商圈三處特色景點的觀察重點</caption>
+                    <!-- thead 包住表頭；tr 是一橫列；th 是標題儲存格。 -->
+                    <thead>
+                        <tr>
+                            <!-- scope="col" 表示這個 th 是整欄的標題。 -->
+                            <th scope="col">景點名稱</th>
+                            <th scope="col">主要特色</th>
+                            <th scope="col">建議觀察重點</th>
+                        </tr>
+                    </thead>
+                    <!-- tbody 包住資料列；td 是一般資料儲存格。 -->
+                    <tbody>
+                        <tr>
+                            <!-- scope="row" 表示這個 th 是本列的標題。 -->
+                            <th scope="row">勤美誠品綠園道</th>
+                            <td>結合商場購物與高達 20 公尺的室內植生牆</td>
+                            <td>建築綠化設計及內部店舖與逛街動線</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">市民廣場</th>
+                            <td>大片開闊的都市草地綠帶</td>
+                            <td>人們的休憩活動與街區草地景觀</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">草悟道藝文街區</th>
+                            <td>串聯科博館與美術館的綠園道空間</td>
+                            <td>街頭藝人、公共設施及周邊逛街氛圍</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="photo">
+                <h2>四、室內植生牆照片</h2>
+                <!-- figure 將圖片與圖說組成一個單位；figcaption 是圖說。 -->
+                <figure>
+                    <!--
+                        img 是空元素，不寫 /img 結束標籤。
+                        src 指定圖片網址；本範例使用外部圖片，需要連線才能載入。
+                        alt 描述照片內容，圖片未載入時或使用螢幕閱讀器時仍可理解。
+                        width 控制顯示寬度；未指定 height，瀏覽器依原圖比例顯示。
+                    -->
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/8/88/Park_Lane_by_CMP_20170206.jpg?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+                        alt="勤美誠品綠園道商場外觀與綠意景致"
+                        width="480">
+                    <figcaption>
+                        勤美誠品綠園道為台中市民提供結合自然的購物與休閒空間。
+                        圖片來源：<a href="https://zh.wikipedia.org/zh-tw/%E5%8B%A4%E7%BE%8E%E8%AA%A0%E5%93%81%E7%B6%A0%E5%9C%92%E9%81%93" rel=""noopener noreferrer">臺中觀光旅遊網「勤美誠品綠園道」景點頁</a>。
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="video">
+                <h2>五、影音報導</h2>
+                <p>透過下方影片漫步勤美草悟道街頭，體驗台中的城市綠意與日常節奏。</p>
+                <!--
+                    iframe 將 YouTube 播放器嵌入本頁，需要明確的結束標籤。
+                    src 使用 /embed/影片ID，不是一般的 /watch?v=影片ID 網址。
+                    width、height 設定播放器尺寸；title 說明嵌入內容。
+                    allow 開放所列功能；allowfullscreen 允許全螢幕播放。
+                    referrerpolicy 保留跨站來源資訊；仍須由瀏覽器提供有效來源。
+                    直接開本機檔案時，YouTube 可能因缺少 HTTP Referer 而出現錯誤 153。
+                    若發生此情況，請用本機 HTTP 伺服器預覽，或使用下方原始影片連結。
+                    播放也取決於網路、YouTube 及發布者的嵌入設定。
+                -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WM13YIJPYyk?si=hKj_di0uP6Lr11GZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- a 提供一般影片連結；播放器無法播放時仍能前往 YouTube。 -->
+                <p>
+                    若播放器無法播放，請
+                    <a href="https://www.youtube.com/watch?v=WM13YIJPYyk" target="_blank" rel="noopener noreferrer">在 YouTube 觀看勤美草悟道街頭日常影片（另開分頁）</a>。
+                </p>
+                <p><small>影片為外部作者發布的街區日常紀錄，現場狀況請以最新官方資訊為準。</small></p>
+            </section>
+            
+<!-- 位置地圖是報導的主要資訊，因此用 section；iframe 嵌入外部地圖。 -->
+<section id="map">
+    <h2>六、位置地圖：找到勤美誠品綠園道</h2>
+    <p>勤美誠品綠園道位於台中市西區，地址為<strong>公益路 68 號</strong>。
+        下方地圖標示本文介紹的地標位置，方便讀者對照景點與周邊街道。</p>
+    <!--
+        Google 地圖以座標定位，q 指定緯度 24.15123、經度 120.66385，output=embed 回傳嵌入版。
+        網址的 & 在 HTML 中寫成 &amp;。不需在本教學檔放入 API 金鑰。
+        title 說明地圖用途；loading="lazy" 延後載入較下方的外部內容。
+        iframe 必須寫結束標籤；width 與 height 設定顯示尺寸。
+        地圖需連網；另提供一般地圖連結，載入失敗時仍可開啟。
+    -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.5821069992408!2d120.66142757603141!3d24.15130977326584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9dd9fe0011%3A0x6f9d8ebd38727566!2z5Yuk576O6Kqg5ZOB57ag5ZyS6YGT!5e0!3m2!1szh-TW!2stw!4v1791948151036!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <p><a href="https://maps.app.goo.gl/HWGfZZdrfXifHDFk8">在 Google 地圖開啟勤美誠品綠園道（另開分頁）</a></p>
+    <p><small>位置查詢由 Google 地圖提供；抵達後請依現場指標與草悟道周邊導覽確認動線。</small></p>
+</section>
+<hr>
+<!--
+    aside 放與報導相關、但可獨立省略的補充資訊。
+    此處是走讀提醒，不用來取代主要景點介紹。
+    純 HTML 下會依文件順序顯示；aside 不會自動移到右側。
+-->
+<aside id="tips" aria-labelledby="tips-title">
+    <h2 id="tips-title">走讀小提醒</h2>
+    <!-- details 與 summary 提供瀏覽器原生收折功能，不需要自寫 JavaScript。 -->
+    <details open>
+        <summary>出發前與走讀時，記得這三件事</summary>
+        <ul>
+            <li>攜帶飲用水，草悟道戶外活動請注意防曬或準備雨具。</li>
+            <li>在商圈與綠帶周邊留意人潮與交通安全，保持環境整潔。</li>
+            <li>以文字或照片記錄觀察；若寫入報導，區分現場觀察與引用資料。</li>
+        </ul>
+    </details>
+</aside>
+<hr>
+            <section id="sources">
+                <h2>七、資料來源</h2>
+                <p>本報導依下列資料整理，逛街順序與觀察建議由示範作者規劃。</p>
+                <!--
+                    target="_blank" 另開分頁；rel 保護開啟新頁面的關聯。
+                    網址中的 & 在 HTML 原始碼中寫成 &amp;。
+                -->
+                <ul>
+                    <li><a href="https://upload.wikimedia.org/wikipedia/commons/8/88/Park_Lane_by_CMP_20170206.jpg?utm_source=zh.wikipedia.org&utm_campaign=imageinfo&utm_content=original" target="_blank" rel="noopener noreferrer">室內植生牆照片（含圖片來源）</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=WM13YIJPYyk" target="_blank" rel="noopener noreferrer">勤美綠園道介紹影片</a></li>
+                    <li><a href="https://maps.app.goo.gl/HWGfZZdrfXifHDFk8" target="_blank" rel="noopener noreferrer">勤美綠園道Google地圖</a></li>
+                </ul>
+                <p><small>資料整理日期：2026 年 10 月 14 日。</small></p>
+            </section>
+        </article>
+    </main>
+
+    <hr>
+    <!-- footer 是頁尾；來源與作者標示應依自己的作品修改。 -->
+    <footer>
+        <p>第五次 HTML 作業範例｜勤美綠園道報導</p>
+        <p><a href="#top">回到頁首</a></p>
+    </footer>
+</body>
+</html>
